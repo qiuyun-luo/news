@@ -17,7 +17,7 @@ import java.io.IOException;
 
 @RestController
 @CrossOrigin(origins = "*")
-@Api(value = "新闻管理")
+@Api(value = "新闻管理a")
 @RequestMapping("news")
 public class NewsController {
     @Autowired
