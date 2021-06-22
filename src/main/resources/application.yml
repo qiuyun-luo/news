@@ -1,0 +1,19 @@
+
+server:
+  port: 8081
+spring:
+  datasource:
+    username: 'root'
+    password: 'lqx666'
+    url: jdbc:mysql://127.0.0.1:3306/news?characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    static-path-pattern=:/resources/static
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com/example/news/Pojo
+logging:
+  pattern:
+    console: "%d - %msg%n"
+  level:
+    com.example.com: debug
